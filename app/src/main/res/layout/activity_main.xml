@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00774141"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Diary"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#80184558"
+            android:gravity="center"
+            android:text="Welcome To Diary"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/NewExpenditure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:onClick="NewExpenditure"
+            android:text="Add New Exendture"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Expenditures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="All Expenditures"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/Summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="#F7E41515"
+            android:gravity="center"
+            android:text="Expenditure Summary"
+            android:textColor="#F5F5F5"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
