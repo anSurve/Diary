@@ -110,8 +110,8 @@ public class AppNewExpenditures extends AppCompatActivity {
         return ref;
     }
 
-    public ArrayList<String> getCategories(){
-        DatabaseReference myDbRef = database.getReference("Diary").child("Category");
+    public void getCategories(){
+/*        DatabaseReference myDbRef = database.getReference("Diary").child("Category");
         ValueEventListener postListener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -136,28 +136,25 @@ public class AppNewExpenditures extends AppCompatActivity {
                 Log.d("Aniket", "Cancelled");
             }
         };
-        myDbRef.addValueEventListener(postListener);
+        myDbRef.addValueEventListener(postListener);*/
+        categories.add("Grocery");
+        categories.add("House Rent");
+        categories.add("Travelling");
+        categories.add("Other");
         Log.d("Aniket","categories"+categories);
-        return categories;
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_new_expenditures);
-        final ArrayList<String> items = getCategories();
-        ArrayList<String> items1 = new ArrayList<>();
-        items1.add("Aniket");
-        items1.add("Surve");
-        Log.d("Aniket","items"+items);
-        Log.d("Aniket","items1"+items1);
-        Log.d("Aniket","items1"+items1.toString());
+        getCategories();
 
         Spinner spinner = (Spinner) findViewById(R.id.cats_spinner);
         Log.d("Aniket", "before");
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item,
-                items);
+                categories);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         Date = (TextView)findViewById(R.id.Date);

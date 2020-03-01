@@ -8,6 +8,9 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -32,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void NewExpenditure(View view){
         //build Intent to open Scrolling activity
+        Button btn = (Button)findViewById(R.id.NewExpenditure);
+        Animation anm = AnimationUtils.loadAnimation(this, R.anim.button_click);
+        btn.startAnimation(anm);
         Intent intent = new Intent(this, AppNewExpenditures.class);
         startActivity(intent);
     }
