@@ -12,10 +12,6 @@
         <activity
             android:name=".addedExpenditure"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".ScrollingActivity"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".AppNewExpenditures" />
         <activity android:name=".MainActivity">
             <intent-filter>
