@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".addedExpenditure"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"

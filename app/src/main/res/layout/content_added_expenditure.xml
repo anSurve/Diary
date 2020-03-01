@@ -8,13 +8,27 @@
     tools:context=".addedExpenditure"
     tools:showIn="@layout/activity_added_expenditure">
 
+    <TextView
+        android:id="@+id/success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Added successfully"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/GoBack"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/custom_button"
         android:onClick="backToMain"
         android:text="Main Page"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"

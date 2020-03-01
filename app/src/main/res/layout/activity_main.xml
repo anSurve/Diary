@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00774141"
+    android:background="@drawable/bg_repeat"
     android:theme="@style/AppTheme.NoActionBar"
     tools:context=".MainActivity">
 
@@ -17,12 +17,12 @@
             android:id="@+id/Diary"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#F3070F"
+            android:background="#000000"
             android:gravity="center"
-            android:text="Welcome To Diary"
+            android:text="Welcome To Diary !"
             android:textColor="#FFFFFF"
             android:textSize="40dp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/NewExpenditure"
@@ -30,9 +30,9 @@
             android:layout_height="40dp"
             android:layout_margin="50dp"
             android:background="@drawable/custom_button"
-            android:textColor="#ffffff"
             android:onClick="NewExpenditure"
             android:text="Add New Exendture"
+            android:textColor="#ffffff"
             android:textSize="20sp" />
 
         <Button
@@ -41,8 +41,8 @@
             android:layout_height="40dp"
             android:layout_margin="50dp"
             android:background="@drawable/custom_button"
-            android:textColor="#ffffff"
             android:text="All Expenditures"
+            android:textColor="#ffffff"
             android:textSize="20dp" />
 
         <TextView
