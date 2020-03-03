@@ -41,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AppNewExpenditures.class);
         startActivity(intent);
     }
+    public void Expenditures(View view){
+        //build Intent to open Scrolling activity
+        Button btn = (Button)findViewById(R.id.Expenditures);
+        Animation anm = AnimationUtils.loadAnimation(this, R.anim.button_click);
+        btn.startAnimation(anm);
+        Intent intent = new Intent(this, Expenditures.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
